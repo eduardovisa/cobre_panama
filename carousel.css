@@ -4,7 +4,6 @@
 
 body {
   padding-top: 3rem;
-  padding-bottom: 3rem;
   color: #5a5a5a;
 }
 
@@ -14,7 +13,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-top: 2.8rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -24,14 +23,14 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 40rem;
 }
 .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem;
+  height: 40rem;
 }
 
 
@@ -39,20 +38,38 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+
+.capacitacionContainer {
+  background-image: url(./assets/img/Fondo_Fondo_1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+}
+
+.capacitacion {
+  padding-top: 5rem;
+  padding-bottom: 2.4rem;
+}
+
+.capacitacion .col-lg-4 {
   text-align: center;
 }
-.marketing h2 {
+.capacitacion h2 {
   font-weight: 400;
 }
 /* rtl:begin:ignore */
-.marketing .col-lg-4 p {
+.capacitacion .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 /* rtl:end:ignore */
 
+.cursosContainer {
+  background-image: url(./assets/img/Fondo_Fondo_2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+}
 
 /* Featurettes
 ------------------------- */
@@ -68,7 +85,6 @@ body {
   /* rtl:remove */
   letter-spacing: -.05rem;
 }
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -86,8 +102,21 @@ body {
   }
 }
 
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
+.navbar {
+  background-color: #c69a57;
+  padding: 1rem;
+}
+
+.navbar-nav > li{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.d-flex{
+  gap:20px;
 }
